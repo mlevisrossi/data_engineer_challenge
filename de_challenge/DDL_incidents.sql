@@ -1,3 +1,5 @@
+CREATE SCHEMA bi_staging;
+
 CREATE TABLE IF NOT EXISTS bi_staging.incidents (
     incident_number integer,
     exposure_number integer,

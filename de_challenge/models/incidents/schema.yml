@@ -1,0 +1,16 @@
+version: 2
+sources:
+  - name: postgres
+      database: postgres
+      schema: bi_staging
+      tables:
+        - name: incidents
+models:
+  - name: incidents_by_battalion_model
+    description: "Total incidents by battalion"
+  - name: incidents_by_district_model
+    description: "Total incidents by district"
+  - name: incidents_by_timeperiod_model
+    description: "Total incidents by time period"
+  - name: incidents_by_timeperiod_district_battalion_model
+    description: "Total incidents by time period, district and battalion"
