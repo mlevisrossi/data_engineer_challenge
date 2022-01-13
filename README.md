@@ -19,7 +19,8 @@ The file usually will be placed in _C:\Users\{Username}\\.dbt\profiles.yml_.
 
 Replace the content of the file with the following code:
 
-`de_challenge:
+````
+de_challenge:
   outputs:
     dev:
       type: postgres
@@ -30,7 +31,8 @@ Replace the content of the file with the following code:
       pass: mlevisrossi
       dbname: postgres
       schema: bi_warehouse
-  target: dev`
+  target: dev
+````
 
 # Execution
 Run:
