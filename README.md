@@ -38,7 +38,7 @@ de_challenge:
 Run:
 - `docker compose up`
   It will initialize a postgres database service in a docker container.
-- `extract.py`
+- `extract_load.py`
   Executes the script that extracts the fire incidents data from the API and ingests the data into the incidents table in the public schema.
 - `dbt run`
 Creates the data model
