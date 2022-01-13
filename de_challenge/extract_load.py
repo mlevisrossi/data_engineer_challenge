@@ -27,9 +27,10 @@ df = pd.read_json(URL)
 df['point'] = str(df['point'])
 
 # insert in database
-print('antes de insertar en bd')
+connection.commit()
 df.to_sql('incidents', engine, schema='public', if_exists='replace', index=False)
-print('done')
+connection.commit()
+
 #close connection
 cur.close()
 connection.close()

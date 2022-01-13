@@ -1,6 +1,4 @@
-CREATE SCHEMA bi_staging;
-
-CREATE TABLE IF NOT EXISTS bi_staging.incidents (
+CREATE TABLE IF NOT EXISTS public.incidents (
     incident_number integer,
     exposure_number integer,
     id text,
@@ -64,5 +62,5 @@ CREATE TABLE IF NOT EXISTS bi_staging.incidents (
     number_of_sprinkler_heads_operating integer,
     supervisor_district text,
     neighborhood_district text,
-    point point
+    point text
 );
